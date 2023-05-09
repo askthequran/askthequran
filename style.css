@@ -1,86 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Change the chat bubble color */
+.bpw-message-from-user .bpw-bubble {
+    background-color: #007BFF;
+    color: #FFFFFF;
 }
 
-#chatbox {
-    width: 400px;
-    height: 600px;
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+/* Change the chat bot bubble color */
+.bpw-message-from-bot .bpw-bubble {
+    background-color: #F8F9FA;
+    color: #212529;
 }
 
-#messages {
-    padding: 20px;
-    overflow: auto;
-    flex-grow: 1;
+/* Change the header color of the chat window */
+.bpw-header {
+    background-color: #007BFF;
+    color: #FFFFFF;
 }
 
-.message {
-    margin-bottom: 20px;
-    line-height: 1.4;
+/* Change the chat input box color */
+.bpw-input textarea {
+    background-color: #F8F9FA;
+    color: #212529;
 }
 
-.bot {
-    color: #0084ff;
-    font-weight: bold;
+/* Change the chat send button color */
+.bpw-send-button {
+    color: #007BFF;
 }
 
-.user {
-    color: #444;
-    font-weight: bold;
-    text-align: right;
+/* Change the chatbox background color */
+.bpw-conversation {
+    background-color: #E9ECEF;
 }
-
-#input-area {
-    border-top: 1px solid #ddd;
-    padding: 20px;
-    display: flex;
-}
-
-#input-area input {
-    border: none;
-    padding: 10px;
-    flex-grow: 1;
-    border-radius: 5px;
-}
-
-#input-area button {
-    margin-left: 10px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #0084ff;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-</style>
-</head>
-<body>
-
-<div id="chatbox">
-  <div id="messages">
-    <div class="message bot">Hello! How can I assist you today?</div>
-  </div>
-  <div id="input-area">
-    <input type="text" placeholder="Type your message here...">
-    <button>Send</button>
-  </div>
-</div>
-
-</body>
-</html>
